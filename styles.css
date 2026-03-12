@@ -1,9 +1,11 @@
+/* Globales Reset: entfernt Standardabstände und sorgt für konsistente Box-Berechnung */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Grundlayout des Body: zentriert den Karten-Container auf einem hellen Hintergrund */
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     background-color: #f7f7f4;
@@ -14,6 +16,7 @@ body {
     padding: 20px;
 }
 
+/* Flex-Container für die Preiskarten; steuert Abstand und Ausrichtung */
 .cards-container {
     display: flex;
     flex-direction: row;
@@ -23,6 +26,7 @@ body {
     align-items: flex-start;
 }
 
+/* Einzelne Preiskarte: vertikal aufgebauter Block mit fester Breite */
 .card {
     display: flex;
     flex-direction: column;
@@ -34,11 +38,13 @@ body {
     flex-shrink: 0;
 }
 
+/* Oberer inhaltlicher Bereich einer Karte (Titel, Preis, Featureliste) */
 .card-top {
     display: flex;
     flex-direction: column;
 }
 
+/* Typografie für den Plan-Titel (z.B. Hobby, Pro) */
 .card-title {
     font-size: 22px;
     line-height: 28px;
@@ -47,6 +53,7 @@ body {
     margin-bottom: 8px;
 }
 
+/* Wrapper für die Preiszeile; bündelt Betrag und Zeitraum in einer Linie */
 .card-price {
     font-size: 20px;
     color: rgba(38, 37, 30, 0.5);
@@ -54,32 +61,38 @@ body {
     align-items: baseline;
 }
 
+/* Hauptpreis (Zahl oder "Free") mit etwas größerer Darstellung */
 .card-price-amount {
     font-size: 22px;
     font-weight: 400;
     color: rgba(38, 37, 30, 0.5);
 }
 
+/* Kürzel für den Abrechnungszeitraum (z.B. /mo.) mit kleinerem Text */
 .card-price-period {
     font-size: 14px;
     color: rgba(38, 37, 30, 0.5);
 }
 
+/* Abstand nach unten, damit Button klar vom Inhalt getrennt ist */
 .card-content {
     margin-bottom: 32px;
 }
 
+/* Einleitungstext über der Featureliste (z.B. "Includes") */
 .includes-text {
     font-size: 16px;
     color: rgba(38, 37, 30, 0.5);
     margin: 16px 0px;
 }
 
+/* Featureliste ohne Standard-Aufzählungszeichen */
 .features-list {
     list-style: none;
     padding: 0;
 }
 
+/* Einzelnes Feature mit Checkmark links und Text rechts */
 .features-list li {
     display: flex;
     align-items: center;
@@ -88,6 +101,7 @@ body {
     color: #26251e;
 }
 
+/* Visuelle Gestaltung des Häkchens links neben jedem Feature */
 .checkmark {
     color: #26251e;
     font-size: 14px;
@@ -95,6 +109,7 @@ body {
     font-weight: 400;
 }
 
+/* Basisstil für alle Call-to-Action-Buttons auf den Karten */
 .download-button {
     margin-top: auto;
     width: fit-content;
@@ -109,27 +124,33 @@ body {
     transition: background-color 0.2s ease;
 }
 
+/* Hover-Zustand für neutrale (sekundäre) Buttons */
 .download-button:hover {
     background-color: #D8D6CE;
 }
 
+/* Aktiver Zustand für neutrale (sekundäre) Buttons bei Klick */
 .download-button:active {
     background-color: #D8D6CE;
 }
 
+/* Primärer Button (z.B. "Get Pro") mit starkem Kontrast */
 .download-button.primary {
     background-color: #111;
     color: #fff;
 }
 
+/* Hover-Zustand für den primären Button */
 .download-button.primary:hover {
     background-color: #333;
 }
 
+/* Aktiver Zustand für den primären Button bei Klick */
 .download-button.primary:active {
     background-color: #333;
 }
 
+/* Feststehendes Badge oben in der Mitte, das die Seitenversion beschreibt */
 .page-label {
     position: fixed;
     top: 16px;
@@ -143,6 +164,7 @@ body {
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
+/* Hervorhebung des Labels (z.B. "HTML version") innerhalb des Badges */
 .page-label strong {
     color: #333;
 }
