@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta- und Typografie-Setup für die Seite (Zeichensatz, Responsive-Viewport, Schrift, Titel, Stylesheet) -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pricing Plans — HTML version</title>
@@ -10,16 +11,30 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Feststehendes Label oben auf der Seite, das diese Version als reines HTML kennzeichnet -->
     <p class="page-label"><strong>HTML version</strong> — static markup</p>
+
+    <!-- Wrapper für alle Preiskarten; steuert das Layout der Karten nebeneinander -->
     <div class="cards-container">
+
+        <!-- Erste Preiskarte: Hobby-Tarif mit kostenloser Nutzung -->
         <div class="card">
+            <!-- Oberer Bereich der Karte: Titel, Preis, Leistungsbeschreibung -->
             <div class="card-top">
+                <!-- Name des Plans, typografisch hervorgehoben -->
                 <h3 class="card-title">Hobby</h3>
+
+                <!-- Preiszeile; hier nur das Wort "Free", kann später durch Zahl ersetzt werden -->
                 <p class="card-price">
                     <span class="card-price-amount">Free</span>
                 </p>
+
+                <!-- Inhaltlicher Block mit Überschrift und Feature-Liste -->
                 <div class="card-content">
+                    <!-- Kurzer Einleitungstext zu den enthaltenen Features -->
                     <p class="includes-text">Includes:</p>
+
+                    <!-- Liste der Features des Hobby-Plans mit Checkmarks -->
                     <ul class="features-list">
                         <li>
                             <span class="checkmark">✓</span>
@@ -36,17 +51,29 @@
                     </ul>
                 </div>
             </div>
+
+            <!-- Call-to-Action für den Hobby-Plan; visuell als sekundärer Button gestylt -->
             <button class="download-button secondary">Download</button>
         </div>
+
+        <!-- Zweite Preiskarte: Pro-Tarif mit monatlicher Gebühr -->
         <div class="card">
+            <!-- Oberer Bereich der Karte: Titel, Preis, Leistungsbeschreibung -->
             <div class="card-top">
+                <!-- Name des Plans, typografisch hervorgehoben -->
                 <h3 class="card-title">Pro</h3>
+
+                <!-- Preiszeile mit Betrag und Zeitraum (pro Monat) -->
                 <p class="card-price">
                     <span class="card-price-amount">$20</span>
                     <span class="card-price-period">/mo.</span>
                 </p>
+
+                <!-- Inhaltlicher Block mit erweiterten Features gegenüber Hobby -->
                 <div class="card-content">
                     <p class="includes-text">Everything in Hobby, plus:</p>
+
+                    <!-- Liste der zusätzlichen Pro-Features mit Checkmarks -->
                     <ul class="features-list">
                         <li>
                             <span class="checkmark">✓</span>
@@ -67,7 +94,51 @@
                     </ul>
                 </div>
             </div>
+
+            <!-- Primärer Call-to-Action für den Pro-Plan mit stärkerem visuellen Gewicht -->
             <button class="download-button primary">Get Pro</button>
+        </div>
+
+        <!-- Dritte Preiskarte: Enterprise-Tarif für größere Teams/Organisationen -->
+        <div class="card">
+            <!-- Oberer Bereich der Karte: Titel, Preis, Leistungsbeschreibung -->
+            <div class="card-top">
+                <!-- Name des Plans, typografisch hervorgehoben -->
+                <h3 class="card-title">Enterprise</h3>
+
+                <!-- Preiszeile mit Hinweis auf individuelle Preisgestaltung -->
+                <p class="card-price">
+                    <span class="card-price-amount">Custom</span>
+                </p>
+
+                <!-- Inhaltlicher Block mit Enterprise-spezifischen Leistungsmerkmalen -->
+                <div class="card-content">
+                    <p class="includes-text">Everything in Pro, plus:</p>
+
+                    <!-- Liste der zusätzlichen Enterprise-Features mit Checkmarks -->
+                    <ul class="features-list">
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Priority support & onboarding
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Team management & SSO
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Security & compliance reviews
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Custom billing & invoicing
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Call-to-Action für Enterprise-Kunden; Text signalisiert Kontaktaufnahme -->
+            <button class="download-button secondary">Contact sales</button>
         </div>
     </div>
 </body>
